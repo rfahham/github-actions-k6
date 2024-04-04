@@ -17,6 +17,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install k6
         k6 run k6/script.js
+        echo "Teste executado com sucesso!!!"
 
       
 
