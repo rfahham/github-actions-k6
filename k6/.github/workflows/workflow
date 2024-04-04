@@ -1,0 +1,16 @@
+name: Continuos Integration
+
+on: [pull_request, push, issues, ussue_comment]
+# on: pull_request
+
+jobs:
+  Continuos Integration:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: echo
+      run: echo "WORKING"
+      
+
+
