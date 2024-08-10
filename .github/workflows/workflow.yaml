@@ -1,5 +1,5 @@
 name: Continuos Integration
-run-name: Executado por $ {{ github.actor }} em ${{ github.run_number }}
+run-name: Executado por ${{ github.actor }} em ${{ github.run_number }}
 
 on: [pull_request, push, issues, issue_comment]
 # on: pull_request
