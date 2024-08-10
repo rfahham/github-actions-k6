@@ -1,8 +1,13 @@
 name: Continuos Integration
 run-name: Executado por ${{ github.actor }} em ${{ github.run_number }}
 
-on: [pull_request, push, issues, issue_comment]
 # on: pull_request
+# on: [pull_request, push, issues, issue_comment]
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   run-test:
